@@ -1,6 +1,5 @@
 import './App.css'
-import { Counter } from './first';
-
+import { Counter, Mapper } from './first';
 
 function App() {
   const count: number = 0;
@@ -11,6 +10,8 @@ function App() {
   let planet = "Earth";
   let isTrue = false;
 
+  const names: string[] = ["Alice", "Bob", "Charlie"];
+  const positions: number[] = [1, 2, 3];
 
   planet = "Mars";
 
@@ -23,6 +24,7 @@ function App() {
         and we live in {planet}. which is {isTrue.toString()}
       </div>
       <Counter count={count} />
+      <Mapper names={names} positions={positions} />
     </>
   )
 }
