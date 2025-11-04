@@ -1,19 +1,28 @@
 import './App.css'
-import { counter } from './first';
-import Box from './Box';
+import { Counter } from './first';
+
 
 function App() {
+  const count: number = 0;
+  const firstName: string = "Vite";
+  const lastName: string = "React";
+  const isBoolean: boolean = true;
 
-counter();
+  let planet = "Earth";
+  let isTrue = false;
+
+
+  planet = "Mars";
+
   return (
     <>
-    <Box />
-<div
-className='text-3xl font-bold underline'
->
-  This app is powered by Vite and React
-</div>
-
+      <div
+        className='text-3xl font-bold '
+      >
+        This app is powered by {firstName} and {lastName} and is {isBoolean.toString()}
+        and we live in {planet}. which is {isTrue.toString()}
+      </div>
+      <Counter count={count} />
     </>
   )
 }
