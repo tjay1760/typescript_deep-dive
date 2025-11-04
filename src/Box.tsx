@@ -7,7 +7,7 @@ const Box = () => {
         width: '200px',
         height: '200px',
         backgroundColor: 'lightblue',
-        clipPath: 'circle(100px at 150px 150px)',
+        clipPath: 'ellipse(200px 10px at left 150px)',
     }}
     >Box</div>
   )
