@@ -8,7 +8,9 @@ counter();
   return (
     <>
     <Box />
-<div>
+<div
+className='text-3xl font-bold underline'
+>
   This app is powered by Vite and React
 </div>
 
