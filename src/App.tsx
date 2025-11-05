@@ -1,5 +1,5 @@
 import './App.css'
-import { Counter, Mapper } from './first';
+import { Counter, Mapper, addNumbers } from './first';
 
 function App() {
   const count: number = 0;
@@ -27,6 +27,7 @@ function App() {
       </div>
       <Counter count={count} />
       <Mapper names={names} positions={positions} champion={champion} user={user}/>
+      {addNumbers({a: positions[0], b: positions[3]})}
     </>
   )
 }
