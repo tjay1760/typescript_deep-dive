@@ -20,7 +20,7 @@ export const Mapper = ({names, positions, champion, user}: {names: string[], pos
   );
 };
 
-export const addNumbers =({a,b}: {a: number, b: number})=>{
+export const AddNumbers =({a,b}: {a: number, b: number})=>{
   return(
     <div>The sum is {a + b}</div>
   )

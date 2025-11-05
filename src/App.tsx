@@ -1,5 +1,5 @@
 import './App.css'
-import { Counter, Mapper, addNumbers } from './first';
+import { Counter, Mapper, AddNumbers } from './first';
 
 function App() {
   const count: number = 0;
@@ -14,6 +14,9 @@ function App() {
   const positions: number[] = [1, 2, 3, 4];
   const champion = names[2];
   const user = { name: "Eve", age: 30, isAdmin: true };
+  let human : [string, number, boolean] = ["Frank", 25, false];
+  human[0] = "newName";
+  console.log("Human Tuple:", human);
 
   planet = "Mars";
 
@@ -27,7 +30,7 @@ function App() {
       </div>
       <Counter count={count} />
       <Mapper names={names} positions={positions} champion={champion} user={user}/>
-      {addNumbers({a: positions[0], b: positions[3]})}
+      <AddNumbers a={positions[0]} b={positions[3]} />
     </>
   )
 }
