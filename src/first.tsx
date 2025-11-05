@@ -25,3 +25,15 @@ export const AddNumbers =({a,b}: {a: number, b: number})=>{
     <div>The sum is {a + b}</div>
   )
 }
+
+export const PetShow = ({pet}: {pet: {species: string, age: number, isPet: boolean, owner: string}}) => {
+  return (
+    <div>
+      <h2>Pet Details</h2>
+      <p>Type: {pet.species}</p>
+      <p>Age: {pet.age}</p>
+      <p>Is Pet: {pet.isPet ? "Yes" : "No"}</p>
+      <p>Owner: {pet.owner}</p>
+    </div>
+  );
+};

@@ -1,5 +1,5 @@
 import './App.css'
-import { Counter, Mapper, AddNumbers } from './first';
+import { Counter, Mapper, AddNumbers,PetShow } from './first';
 
 function App() {
   const count: number = 0;
@@ -20,6 +20,25 @@ function App() {
 
   planet = "Mars";
 
+  interface Animal {
+    species: string;
+    age: number;
+    isPet: boolean;
+    owner: string;
+  }
+
+  const dog: Animal = {
+    species: "Dog",
+    age: 5,
+    isPet: true,
+    owner: "Alice"
+  };
+  const cat: Animal = {
+    species: "Cat",
+    age: 3,
+    isPet: true,
+    owner: "Bob"
+  };
   return (
     <>
       <div
@@ -31,6 +50,8 @@ function App() {
       <Counter count={count} />
       <Mapper names={names} positions={positions} champion={champion} user={user}/>
       <AddNumbers a={positions[0]} b={positions[3]} />
+      <PetShow pet={dog} />
+      <PetShow pet={cat} />
     </>
   )
 }
