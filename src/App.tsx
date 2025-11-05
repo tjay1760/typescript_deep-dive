@@ -11,6 +11,10 @@ function App() {
   let planet = "Earth";
   const isTrue = false;
 
+  type RGB = [number, number, number];
+  type RGBA = [number, number, number, number];
+  type Id = string | number;
+
   const names: string[] = ["Alice", "Bob", "Charlie", "Dave"];
   const positions: number[] = [1, 2, 3, 4];
   const champion = names[2];
@@ -24,26 +28,29 @@ function App() {
     name: string;
     age: number;
     isAdmin: boolean;
+    id: Id;
   }
 
   const person1: Person = {
     name: "George",
     age: 40,
-    isAdmin: false
+    isAdmin: false,
+    id: 1
   };
   const person2: Person = {
     name: "Hannah",
     age: 28,
-    isAdmin: true
+    isAdmin: true,
+    id: "2"
   };
   interface Animal {
     species: string;
     age: number;
     isPet: boolean;
     owner: Person;
+    id: Id;
   }
-  type RGB = [number, number, number];
-  type RGBA = [number, number, number, number];
+
 
   function getRandomColor(): RGB | RGBA {
     const r = Math.floor(Math.random() * 256);
@@ -61,13 +68,15 @@ function App() {
     species: "Dog",
     age: 5,
     isPet: true,
-    owner: person1
+    owner: person1,
+    id: 1
   };
   const cat: Animal = {
     species: "Cat",
     age: 3,
     isPet: true,
-    owner: person2
+    owner: person2,
+    id: "2"
   };
   return (
     <>
