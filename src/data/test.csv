@@ -1,0 +1,5 @@
+to, from, amount, notes
+"John", "Jane", 100, "Payment for services"
+"Acme Corp", "John", 250, "Invoice #1234"
+"Jane", "Acme Corp", 75, "Refund for order #5678"
+"Foo Inc", "Bar LLC", 300, "Consulting fee"
